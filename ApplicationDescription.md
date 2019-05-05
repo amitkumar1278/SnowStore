@@ -46,7 +46,7 @@ for more detail of problem please check **ProblemStatement.md**
     5. Class is very flexible to introduce new rules and calculate there prices.
     
 * **checkout.ts**	
-    1. Contain method to scan product and add to _productCart.
+    1. Contain method to **scan product and add to _productCart**.
     2. Create productMap having count of distinct item available in the _productCart.
     3. Finally evaluate total price of cart.
     
