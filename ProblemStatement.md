@@ -4,9 +4,9 @@ Snow Stores is a Physical store which sells (only) 3 products:
 
 <table>
     <tr><th>Code</th><th>Name</th><th>Price</th></tr>
-    <tr><td>VOUCHER</td><td>SNOW VOUCHER</td><td>7.00</td></tr>
-    <tr><td>TSHIRT</td><td> SNOW T-Shirt</td><td>21.00</td></tr>
-    <tr><td>MUG</td><td>SNOW Coffee MUG</td><td>9.50</td></tr>
+    <tr><td>VOUCHER</td><td>SNOW VOUCHER</td><td>7.00 &euro;</td></tr>
+    <tr><td>TSHIRT</td><td> SNOW T-Shirt</td><td>21.00 &euro;</td></tr>
+    <tr><td>MUG</td><td>SNOW Coffee MUG</td><td>9.50 &euro;</td></tr>
 </table>
 
 
@@ -29,17 +29,17 @@ SNOW Stores checkout process allows for items to be scanned in any order, and sh
 
 **Items:**	VOUCHER, TSHIRT, MUG
 
-**Total:** 37.50
+**Total:** 37.50 &euro;
 
 
 **Items:**	TSHIRT, TSHIRT, TSHIRT, VOUCHER, TSHIRT, 
 
-**Total:** 83.00
+**Total:** 83.00 &euro;
 
 
 **Items:**	VOUCHER, TSHIRT, VOUCHER, VOUCHER, MUG, TSHIRT, TSHIRT
 
-**Total:** 80.5
+**Total:** 80.5 &euro;
 
 
 
