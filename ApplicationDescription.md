@@ -1,4 +1,4 @@
-**Items for which we wrote these solution are:**
+**Considered items for the solution are:**
 <table>
     <tr><th>Code</th><th>Name</th><th>Price</th></tr>
     <tr><td>VOUCHER</td><td>SNOW VOUCHER</td><td>7.00 &euro;</td></tr>
@@ -31,6 +31,24 @@ for more detail of problem please check **ProblemStatement.md**
 
 
 ## Application implementation:
-* **checkout.ts**	
-* **pricingRule.ts**
+
 * **product.ts**
+    1. Containing field like **_productCode, _productName and _productPrice** on which entire application flow depend.
+    2. Contain constructor having parameter of all defined variable.
+    3. Contains getter method to get the product state.
+    4. Currently we do not require setter methods because we are not any operation like updating products.
+    
+* **pricingRule.ts**
+    1. This class is **mapped with Product and PricingCondition** to create and execute the rules.
+    2. Contain field like **_multiplier** and **_qualifyingQuantity** which is very important and useful to apply and execute the offers. **_multiplier is set to "1" if no rule is applied on product.**
+    3. Contain methods to set rule on product dynamically.
+    4. Contain methods to **calculate total price** of product available in product.
+    5. Class is very flexible to introduce new rules and calculate there prices.
+    
+* **checkout.ts**	
+    1. Contain method to scan product and add to _productCart.
+    2. Create productMap having count of distinct item available in the _productCart.
+    3. Finally evaluate total price of cart.
+    
+    
+
