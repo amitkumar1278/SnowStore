@@ -1,12 +1,14 @@
-##Problem Statement
-
 ##Snow Stores is a Physical store which sells (only) 3 products:
+-----------------------------------------------------------------------------------------
 
-Code			Name					Price
--------------------------------------------------------
-VOUCHER			SNOW VOUCHER			7.00
-TSHIRT			SNOW T-Shirt			21.00
-MUG				SNOW Coffee MUG			9.50
+
+Code			    Name					        Price
+================================================
+VOUCHER			  SNOW VOUCHER			    7.00
+
+TSHIRT			  SNOW T-Shirt			    21.00
+
+MUG				    SNOW Coffee MUG			   9.50
 
 Various departments have insisted on the following discounts:
 
@@ -17,19 +19,26 @@ Various departments have insisted on the following discounts:
 SNOW Stores checkout process allows for items to be scanned in any order, and should return the total amount to be paid. The interface for the checkout process look like this:
 
 const co = new Checkout(pricingRules);
+
 co.scan("VOUCHER").scan("VOUCHER").scan("TSHIRT");
+
 const price = co.total();
 
-Examples:
+
+* Examples:
+---------------------------------------------------------------------------------------------------------------
 Items:	VOUCHER, TSHIRT, MUG
 Total: 37.50
+
 
 Items:	TSHIRT, TSHIRT, TSHIRT, VOUCHER, TSHIRT, 
 Total: 83.00
 
+
 Items:	VOUCHER, TSHIRT, VOUCHER, VOUCHER, MUG, TSHIRT, TSHIRT
 Total: 80.5
 
+---------------------------------------------------------------------------------------------------------------
 Using modern JavaScript (ES6 or if you prefer, Typescript), you should implement a checkout process that fulfils the requirements. In order to provide a solution, you should take into account the following aspects:
 
 * Deliver decent (production ready) code.
