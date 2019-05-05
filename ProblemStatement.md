@@ -1,14 +1,14 @@
-##Snow Stores is a Physical store which sells (only) 3 products:
+Snow Stores is a Physical store which sells (only) 3 products:
 -----------------------------------------------------------------------------------------
+				    			   
 
+<table>
+    <tr><th>Code</th><th>Name</th><th>Price</th></tr>
+    <tr><td>VOUCHER</td><td>SNOW VOUCHER</td><td>7.00</td></tr>
+    <tr><td>TSHIRT</td><td> SNOW T-Shirt</td><td>21.00</td></tr>
+    <tr><td>MUG</td><td>SNOW Coffee MUG</td><td>9.50</td></tr>
+</table>
 
-Code			    Name					        Price
-================================================
-VOUCHER			  SNOW VOUCHER			    7.00
-
-TSHIRT			  SNOW T-Shirt			    21.00
-
-MUG				    SNOW Coffee MUG			   9.50
 
 Various departments have insisted on the following discounts:
 
@@ -18,27 +18,31 @@ Various departments have insisted on the following discounts:
 
 SNOW Stores checkout process allows for items to be scanned in any order, and should return the total amount to be paid. The interface for the checkout process look like this:
 
-const co = new Checkout(pricingRules);
+*const co = new Checkout(pricingRules);*
 
-co.scan("VOUCHER").scan("VOUCHER").scan("TSHIRT");
+*co.scan("VOUCHER").scan("VOUCHER").scan("TSHIRT");*
 
-const price = co.total();
-
-
-* Examples:
----------------------------------------------------------------------------------------------------------------
-Items:	VOUCHER, TSHIRT, MUG
-Total: 37.50
+*const price = co.total();*
 
 
-Items:	TSHIRT, TSHIRT, TSHIRT, VOUCHER, TSHIRT, 
-Total: 83.00
+## Examples:
+
+**Items:**	VOUCHER, TSHIRT, MUG
+
+**Total:** 37.50
 
 
-Items:	VOUCHER, TSHIRT, VOUCHER, VOUCHER, MUG, TSHIRT, TSHIRT
-Total: 80.5
+**Items:**	TSHIRT, TSHIRT, TSHIRT, VOUCHER, TSHIRT, 
 
----------------------------------------------------------------------------------------------------------------
+**Total:** 83.00
+
+
+**Items:**	VOUCHER, TSHIRT, VOUCHER, VOUCHER, MUG, TSHIRT, TSHIRT
+
+**Total:** 80.5
+
+
+
 Using modern JavaScript (ES6 or if you prefer, Typescript), you should implement a checkout process that fulfils the requirements. In order to provide a solution, you should take into account the following aspects:
 
 * Deliver decent (production ready) code.
